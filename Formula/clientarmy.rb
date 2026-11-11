@@ -1,16 +1,16 @@
 class Clientarmy < Formula
   desc "Manage Android emulators, iOS simulators, and browser windows"
   homepage "https://github.com/ippa/homebrew-tap"
-  version "0.1.0"
+  version "0.1.1"
 
   on_arm do
-    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.1.0/clientarmy_0.1.0_darwin_arm64.tar.gz"
-    sha256 "94a36aae5e96219ddc37a1d9d96554e4f0cf07a61a461e4f6bff6d3f62bd18d1"
+    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.1.1/clientarmy_0.1.1_darwin_arm64.tar.gz"
+    sha256 "628bdb51bee7c2dae278f345e144442cae94854a22501f18130e505f5030237b"
   end
 
   on_intel do
-    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.1.0/clientarmy_0.1.0_darwin_amd64.tar.gz"
-    sha256 "3742e965ca0d4d438c128291c0f90c83b93b5cb3104912f9629e7e9ee0ae9246"
+    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.1.1/clientarmy_0.1.1_darwin_amd64.tar.gz"
+    sha256 "f93be76c3d8f456b94ce9231cf700666b7c311888384da15c0c5fdc33a83705c"
   end
 
   depends_on macos: :ventura
