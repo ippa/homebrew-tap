@@ -11,3 +11,13 @@ If Homebrew requests trust, run `brew trust --formula ippa/tap/clientarmy` and r
 Run `clientarmy --help` to get started. Android features require Android SDK tools; iOS requires full Xcode. Native features require the relevant macOS permissions.
 
 This repository distributes binary releases.
+
+## tai
+
+A terminal AI assistant for macOS and Linux:
+
+```sh
+brew install ippa/tap/tai
+```
+
+Run `tai login` to configure a provider, then `tai "your question"`.
