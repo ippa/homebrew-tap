@@ -1,22 +1,31 @@
 class Clientarmy < Formula
   desc "Manage Android emulators, iOS simulators, and browser windows"
   homepage "https://github.com/ippa/homebrew-tap"
-  version "0.2.2"
+  version "0.2.3"
 
   on_arm do
-    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.2.2/clientarmy_0.2.2_darwin_arm64.tar.gz"
-    sha256 "9d629d7f1e5e0cda52116fd4cb1612da67f6c72c89f397e15e28828f37dc9fc9"
+    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.2.3/clientarmy_0.2.3_darwin_arm64.tar.gz"
+    sha256 "46a9341bb97f2c3a40746e3f4bcdafd42d925432029ee4c59a82886b846d9865"
   end
 
   on_intel do
-    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.2.2/clientarmy_0.2.2_darwin_amd64.tar.gz"
-    sha256 "69968d87364b52f3fd4e42734e17f8015ee0464695521dfa5c2997882a52cf92"
+    url "https://github.com/ippa/homebrew-tap/releases/download/clientarmy-v0.2.3/clientarmy_0.2.3_darwin_amd64.tar.gz"
+    sha256 "a86778114840a160d7b0a680fa04a5bbca1777d525929eed5372f1ba8a736cfe"
   end
 
   depends_on macos: :ventura
 
   def install
-    bin.install "clientarmy"
+    prefix.install "ClientArmy.app"
+    bin.install_symlink prefix/"ClientArmy.app/Contents/MacOS/ClientArmy" => "clientarmy"
+  end
+
+  def caveats
+    <<~EOS
+      macOS permissions now belong to ClientArmy.app. Existing standalone CLI
+      grants need a one-time approval for ClientArmy in System Settings.
+      After confirming it works, remove obsolete clientarmy entries there.
+    EOS
   end
 
   test do
