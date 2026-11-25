@@ -1,27 +1,27 @@
 class Tai < Formula
   desc "Cross-platform terminal AI assistant with guarded command execution"
   homepage "https://tai.ippa.se"
-  version "2.2.1"
+  version "2.2.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.1/tai_2.2.1_darwin_arm64.tar.gz"
-      sha256 "f5d1eb9d038b565d63a984f4e0fae1e1cf2c0dfa6a82a34e079ec127a26e2e08"
+      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.2/tai_2.2.2_darwin_arm64.tar.gz"
+      sha256 "4ac6e04836efe4b70c83d95cf9734456b5380ed4c79dd1b69b4c85821535ae04"
     end
     on_intel do
-      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.1/tai_2.2.1_darwin_x64.tar.gz"
-      sha256 "cd8d783c7ea7eb2c20d41a275689b53681f81ac714b9783dbd83c713c70fc9d1"
+      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.2/tai_2.2.2_darwin_x64.tar.gz"
+      sha256 "2f4a6c9cba65f81c9422f8cef5bed2d4a6df0cfbb33eebd77ece3cb83f0d97e0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.1/tai_2.2.1_linux_arm64.tar.gz"
-      sha256 "b329c47b19b7650532f9e288f78405da949285e37e519dac8b6ae32a3a8181cc"
+      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.2/tai_2.2.2_linux_arm64.tar.gz"
+      sha256 "4e5e0d0b0233af32403c193b79ca7da83fb26c8fd1a636b8b496cb234e77fa02"
     end
     on_intel do
-      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.1/tai_2.2.1_linux_x64.tar.gz"
-      sha256 "04e8a74164604f1e830590c105671063d86cf3474725edf1c3b62a121785e2f2"
+      url "https://github.com/ippa/homebrew-tap/releases/download/tai-v2.2.2/tai_2.2.2_linux_x64.tar.gz"
+      sha256 "02f669675259dff89d1b3f513c9227498f80e07b6c4d278c16536c25ec10d429"
     end
   end
 
